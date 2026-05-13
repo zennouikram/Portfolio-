@@ -1376,7 +1376,10 @@ footer span { color: var(--rouge); }
           <a href="http://213.199.35.131/" target="_blank" class="projet-link-btn primary">
             <i class="fa-solid fa-globe"></i> Site en ligne
           </a>
-        
+        <a href="http://213.199.35.131/admin/login" target="_blank" class="projet-link-btn ghost">
+            <i class="fa-solid fa-lock"></i> Accès back-office
+          </a>
+
           <a href="https://github.com/zennouikram/mediatekformation" target="_blank" class="projet-link-btn ghost">
             <i class="fa-brands fa-github"></i> Dépôt GitHub
           </a>
@@ -1401,7 +1404,20 @@ footer span { color: var(--rouge); }
             Les interactions avec la base de données passent exclusivement par Doctrine ORM, 
             garantissant la prévention des injections SQL.
           </p>
-
+<p>
+            J'ai mis en place une <strong>interface d'administration sécurisée</strong> avec système
+            d'authentification : seuls les utilisateurs connectés peuvent accéder au back-office et
+            gérer le contenu. Vous pouvez tester l'accès admin avec les identifiants ci-dessous.
+          </p>
+          <div style="background:var(--gris-clair);border-radius:10px;padding:14px 16px;margin-bottom:1rem;border-left:3px solid var(--rouge);">
+            <div style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--rouge);margin-bottom:8px;">Accès démo — Back-office admin</div>
+            <div style="font-size:13px;color:var(--gris-fonce);display:flex;flex-direction:column;gap:4px;">
+              <span><strong>URL :</strong> <a href="http://213.199.35.131/admin/login" target="_blank" style="color:var(--rouge);text-decoration:none;">213.199.35.131/admin/login</a></span>
+              <span><strong>Email :</strong> ikramadmin@test.com</span>
+              <span><strong>Mot de passe :</strong> Admin@Password2020</span>
+            </div>
+          </div>
+          
           <!-- Vidéo de démo — remplace VOTRE_ID_VIDEO par l'ID YouTube de ta vidéo -->
           <div style="margin-top:1.5rem;">
             <div style="font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--rouge);margin-bottom:10px;display:flex;align-items:center;gap:6px;">
