@@ -1457,26 +1457,106 @@ footer span { color: var(--rouge); }
     <!-- ── GRILLE PROJETS SECONDAIRES ── -->
     <div class="projets-grid">
 
-      <!-- AP2 2ème année -->
-      <div class="projet-card">
-        <div class="projet-card-top dark"></div>
-        <div class="projet-card-body">
-          <h4>Atelier AP2 — Médiathèque Documents</h4>
-          <p>Application C# de gestion documentaire avec API REST, développée en 2ème année de BTS SIO SLAM.</p>
-          <div style="display:flex;flex-direction:column;gap:6px;">
-            <a href="assets/files/AP2_compte_rendu.pdf" target="_blank" style="font-size:12px;color:var(--rouge);text-decoration:none;display:flex;align-items:center;gap:6px;"><i class="fa-regular fa-file-pdf"></i> Compte rendu</a>
-            <a href="https://github.com/zennouikram/mediatekdocuments" target="_blank" style="font-size:12px;color:var(--gris);text-decoration:none;display:flex;align-items:center;gap:6px;"><i class="fa-brands fa-github"></i> GitHub Application C#</a>
-            <a href="https://github.com/zennouikram/rest_mediatekdocuments" target="_blank" style="font-size:12px;color:var(--gris);text-decoration:none;display:flex;align-items:center;gap:6px;"><i class="fa-brands fa-github"></i> GitHub API REST</a>
-            <a href="assets/files/cahier_des_charges_AP2 .pdf" target="_blank" style="font-size:12px;color:var(--gris);text-decoration:none;display:flex;align-items:center;gap:6px;"><i class="fa-regular fa-file-pdf"></i> Cahier des charges</a>
+     <div class="ap2-featured" id="ap2-card">
+      <div class="ap2-header">
+        <div>
+          <div class="ap2-header-badge">
+            <i class="fa-solid fa-circle" style="font-size:6px;"></i>
+            Atelier de Professionnalisation · 2ème année
+          </div>
+          <h3>MédiaTek Documents</h3>
+          <p>Application C# de gestion documentaire couplée à une API REST PHP — médiathèques du réseau MédiaTek86</p>
+          <div class="tech-tags">
+            <span class="tech-tag">C# / .NET</span>
+            <span class="tech-tag">Visual Studio</span>
+            <span class="tech-tag">PHP (API REST)</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">SonarLint</span>
+            <span class="tech-tag">PHPUnit</span>
+            <span class="tech-tag">Git / GitHub</span>
           </div>
         </div>
-        <div class="projet-card-footer">
-          <span class="mini-tag">C#</span>
-          <span class="mini-tag">API REST</span>
-          <span class="mini-tag">MySQL</span>
-          <span class="mini-tag">PHP</span>
+        <div class="projet-featured-links">
+          <a href="https://github.com/zennouikram/mediatekdocuments" target="_blank" class="projet-link-btn primary">
+            <i class="fa-brands fa-github"></i> Dépôt C# Application
+          </a>
+          <a href="https://github.com/zennouikram/rest_mediatekdocuments" target="_blank" class="projet-link-btn ghost">
+            <i class="fa-brands fa-github"></i> Dépôt API REST PHP
+          </a>
+          <a href="#" target="_blank" class="projet-link-btn ghost">
+            <i class="fa-solid fa-book-open"></i> Documentation technique
+          </a>
         </div>
       </div>
+ 
+      <div class="ap2-body">
+        <div class="ap2-main">
+          <div style="margin-bottom:1.5rem;">
+            <div class="video-label">Contexte du projet</div>
+            <p>
+              Le réseau MédiaTek86 regroupe plusieurs médiathèques de la Vienne. Chaque établissement gère
+              un fonds documentaire composé de livres, DVDs et revues. L'objectif de cet atelier était de
+              développer une <strong>application de bureau en C#</strong> permettant aux gestionnaires de
+              chaque médiathèque de gérer les documents disponibles, les commandes et le suivi des états,
+              depuis une interface sécurisée par authentification.
+            </p>
+            <p>
+              L'application communique avec une <strong>API REST en PHP</strong> déployée sur un serveur distant,
+              qui prend en charge toutes les requêtes vers la base de données MySQL. Cette architecture
+              client/serveur garantit la séparation des responsabilités et sécurise les accès aux données.
+            </p>
+            <p>
+              Le code suit les normes qualité SOLID/DRY analysées avec SonarLint, et inclut des
+              tests unitaires et fonctionnels.
+            </p>
+          </div>
+ 
+        <div class="ap2-sidebar">
+          <div class="sidebar-section">
+            <div class="sidebar-title">Documents PDF</div>
+            <ul class="doc-list">
+              <li><a href="assets/files/Contexte.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Contexte officiel</a></li>
+              <li><a href="assets/files/contratDeveloppement.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Contrat de développement</a></li>
+              <li><a href="assets/files/cahier_des_charges_AP2 .pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Cahier des charges</a></li>
+              <li><a href="assets/files/AP2_missions .pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Missions</a></li>
+              <li><a href="assets/files/AP2_compte_rendu.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Compte rendu</a></li>
+              <li><a href="assets/files/pv_recette .pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> PV de recette</a></li>
+            </ul>
+          </div>
+ 
+          <div class="sidebar-section" style="margin-top:1.5rem;">
+            <div class="sidebar-title">Compétences couvertes</div>
+            <div class="comp-detail-block">
+              <div class="comp-detail-title">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                B1 — Analyse & conception
+              </div>
+              <ul class="comp-detail-items">
+                <li>B1.1 — Analyser les besoins et rédiger le cahier des charges</li>
+                <li>B1.2 — Modéliser la base de données (Merise, UML)</li>
+                <li>B1.3 — Concevoir l'architecture client/serveur (C# + API REST)</li>
+                <li>B1.4 — Planifier les tâches avec un tableau Kanban</li>
+              </ul>
+            </div>
+            <div class="comp-detail-block">
+              <div class="comp-detail-title">
+                <i class="fa-solid fa-laptop-code"></i>
+                B2 — Développement & tests
+              </div>
+              <ul class="comp-detail-items">
+                <li>B2.1 — Développer une application C# structurée (MVC, POO)</li>
+                <li>B2.2 — Implémenter une API REST sécurisée en PHP</li>
+                <li>B2.3 — Authentification et accès sécurisés</li>
+                <li>B2.4 — Tests unitaires et fonctionnels</li>
+                <li>B2.5 — Qualité du code avec SonarLint</li>
+                <li>B2.6 — Gestion des logs applicatifs</li>
+                <li>B2.7 — Prévention injections SQL et failles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <!-- AP 1ère année -->
       <div class="projet-card">
