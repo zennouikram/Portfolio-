@@ -1454,16 +1454,10 @@ footer span { color: var(--rouge); }
       </div>
     </div>
 
-    <!-- ── GRILLE PROJETS SECONDAIRES ── -->
-    <div class="projets-grid">
-
-     <div class="ap2-featured" id="ap2-card">
-      <div class="ap2-header">
+     <div class="projet-featured" id="ap2-card">
+      <div class="projet-featured-header">
         <div>
-          <div class="ap2-header-badge">
-            <i class="fa-solid fa-circle" style="font-size:6px;"></i>
-            Atelier de Professionnalisation · 2ème année
-          </div>
+          <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.5;margin-bottom:6px;">Atelier de Professionnalisation · 2ème année (AP2)</div>
           <h3>MédiaTek Documents</h3>
           <p>Application C# de gestion documentaire couplée à une API REST PHP — médiathèques du réseau MédiaTek86</p>
           <div class="tech-tags">
@@ -1484,36 +1478,43 @@ footer span { color: var(--rouge); }
             <i class="fa-brands fa-github"></i> Dépôt API REST PHP
           </a>
           <a href="#" target="_blank" class="projet-link-btn ghost">
-            <i class="fa-solid fa-book-open"></i> Documentation technique
+            <i class="fa-solid fa-book"></i> Documentation technique
           </a>
         </div>
       </div>
- 
-      <div class="ap2-body">
-        <div class="ap2-main">
-          <div style="margin-bottom:1.5rem;">
-            <div class="video-label">Contexte du projet</div>
-            <p>
-              Le réseau MédiaTek86 regroupe plusieurs médiathèques de la Vienne. Chaque établissement gère
-              un fonds documentaire composé de livres, DVDs et revues. L'objectif de cet atelier était de
-              développer une <strong>application de bureau en C#</strong> permettant aux gestionnaires de
-              chaque médiathèque de gérer les documents disponibles, les commandes et le suivi des états,
-              depuis une interface sécurisée par authentification.
-            </p>
-            <p>
-              L'application communique avec une <strong>API REST en PHP</strong> déployée sur un serveur distant,
-              qui prend en charge toutes les requêtes vers la base de données MySQL. Cette architecture
-              client/serveur garantit la séparation des responsabilités et sécurise les accès aux données.
-            </p>
-            <p>
-              Le code suit les normes qualité SOLID/DRY analysées avec SonarLint, et inclut des
-              tests unitaires et fonctionnels.
-            </p>
+      <div class="projet-featured-body">
+        <div class="projet-featured-main">
+          <p>
+            Le réseau MédiaTek86 regroupe plusieurs médiathèques de la Vienne gérant un fonds documentaire
+            composé de livres, DVDs et revues. J'ai développé une <strong>application de bureau en C#</strong>
+            permettant aux gestionnaires de gérer les documents disponibles, les commandes et le suivi des états,
+            depuis une interface sécurisée par authentification.
+          </p>
+          <p>
+            L'application communique avec une <strong>API REST en PHP</strong> déployée sur un serveur distant,
+            qui prend en charge toutes les requêtes vers la base de données MySQL. Cette architecture
+            client/serveur garantit la séparation des responsabilités et sécurise les accès aux données.
+            Le code suit les normes SOLID/DRY analysées avec SonarLint, avec tests unitaires et fonctionnels.
+          </p>
+          <!-- ⚠ Remplacer VOTRE_ID_VIDEO_AP2 par l'ID YouTube de ta vidéo -->
+          <div style="margin-top:1.5rem;">
+            <div class="video-label">Démonstration vidéo</div>
+            <div class="projet-video-embed">
+              <div style="position:relative;padding-top:56.25%;background:var(--gris-clair);">
+                <iframe
+                  src="https://www.youtube.com/embed/VOTRE_ID_VIDEO_AP2"
+                  style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title="Démonstration MédiaTek Documents — AP2">
+                </iframe>
+              </div>
+            </div>
           </div>
- 
-        <div class="ap2-sidebar">
+        </div>
+        <div class="projet-featured-sidebar">
           <div class="sidebar-section">
-            <div class="sidebar-title">Documents PDF</div>
+            <div class="sidebar-title">Documents</div>
             <ul class="doc-list">
               <li><a href="assets/files/Contexte.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Contexte officiel</a></li>
               <li><a href="assets/files/contratDeveloppement.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Contrat de développement</a></li>
@@ -1523,42 +1524,23 @@ footer span { color: var(--rouge); }
               <li><a href="assets/files/pv_recette .pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> PV de recette</a></li>
             </ul>
           </div>
- 
           <div class="sidebar-section" style="margin-top:1.5rem;">
             <div class="sidebar-title">Compétences couvertes</div>
-            <div class="comp-detail-block">
-              <div class="comp-detail-title">
-                <i class="fa-solid fa-magnifying-glass-chart"></i>
-                B1 — Analyse & conception
-              </div>
-              <ul class="comp-detail-items">
-                <li>B1.1 — Analyser les besoins et rédiger le cahier des charges</li>
-                <li>B1.2 — Modéliser la base de données (Merise, UML)</li>
-                <li>B1.3 — Concevoir l'architecture client/serveur (C# + API REST)</li>
-                <li>B1.4 — Planifier les tâches avec un tableau Kanban</li>
-              </ul>
+            <div class="comp-block">
+              <div class="comp-label">B1 — Analyse & conception</div>
+              <div class="comp-text">B1.1 Analyse des besoins · B1.2 Modélisation UML & Merise · B1.3 Architecture client/serveur · B1.4 Planification Kanban</div>
             </div>
-            <div class="comp-detail-block">
-              <div class="comp-detail-title">
-                <i class="fa-solid fa-laptop-code"></i>
-                B2 — Développement & tests
-              </div>
-              <ul class="comp-detail-items">
-                <li>B2.1 — Développer une application C# structurée (MVC, POO)</li>
-                <li>B2.2 — Implémenter une API REST sécurisée en PHP</li>
-                <li>B2.3 — Authentification et accès sécurisés</li>
-                <li>B2.4 — Tests unitaires et fonctionnels</li>
-                <li>B2.5 — Qualité du code avec SonarLint</li>
-                <li>B2.6 — Gestion des logs applicatifs</li>
-                <li>B2.7 — Prévention injections SQL et failles</li>
-              </ul>
+            <div class="comp-block" style="margin-top:10px;">
+              <div class="comp-label">B2 — Développement & tests</div>
+              <div class="comp-text">B2.1 Application C# MVC/POO · B2.2 API REST PHP · B2.3 Authentification sécurisée · B2.4 Tests unitaires/fonctionnels · B2.5 SonarLint · B2.6 Logs · B2.7 Prévention injections SQL</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-      <!-- AP 1ère année -->
+ 
+    <!-- ── Grille 3 cartes secondaires ── -->
+    <div class="projets-grid">
       <div class="projet-card">
         <div class="projet-card-top gray"></div>
         <div class="projet-card-body">
@@ -1566,13 +1548,7 @@ footer span { color: var(--rouge); }
           <p>Application de gestion du personnel et des absences, réalisée en 1ère année de BTS SIO SLAM.</p>
           <div style="margin-top:10px;border-radius:8px;overflow:hidden;border:1px solid rgba(0,0,0,.07);">
             <div style="position:relative;padding-top:56.25%;background:#f0ece8;">
-              <iframe
-                src="https://www.youtube.com/embed/cHZG6pR_FIA"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                title="Démonstration MEDIATek 86">
-              </iframe>
+              <iframe src="https://www.youtube.com/embed/cHZG6pR_FIA" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen title="MEDIATek 86"></iframe>
             </div>
           </div>
           <div style="margin-top:12px;display:flex;flex-direction:column;gap:6px;">
@@ -1580,14 +1556,9 @@ footer span { color: var(--rouge); }
             <a href="https://drive.google.com/file/d/1B3gSvIdkRsqu3R7UIPPxhTmvhAp8C3ZW/view?usp=sharing" target="_blank" style="font-size:12px;color:var(--gris);text-decoration:none;display:flex;align-items:center;gap:6px;"><i class="fa-regular fa-file-pdf"></i> Compte rendu</a>
           </div>
         </div>
-        <div class="projet-card-footer">
-          <span class="mini-tag">C#</span>
-          <span class="mini-tag">MySQL</span>
-          <span class="mini-tag">Visual Studio</span>
-        </div>
+        <div class="projet-card-footer"><span class="mini-tag">C#</span><span class="mini-tag">MySQL</span><span class="mini-tag">Visual Studio</span></div>
       </div>
-
-      <!-- Stage 1ère année -->
+ 
       <div class="projet-card">
         <div class="projet-card-top" style="background:linear-gradient(90deg,var(--rouge),#e74c3c);"></div>
         <div class="projet-card-body">
@@ -1599,13 +1570,22 @@ footer span { color: var(--rouge); }
             <li>Participation aux réunions de cadrage</li>
           </ul>
         </div>
-        <div class="projet-card-footer">
-          <span class="mini-tag">HTML/CSS</span>
-          <span class="mini-tag">JavaScript</span>
-          <span class="mini-tag">Paris · 2025</span>
-        </div>
+        <div class="projet-card-footer"><span class="mini-tag">HTML/CSS</span><span class="mini-tag">JavaScript</span><span class="mini-tag">Paris · 2025</span></div>
       </div>
-
+ 
+      <div class="projet-card">
+        <div class="projet-card-top dark"></div>
+        <div class="projet-card-body">
+          <h4>Stage 2ème année — DOT Consulting</h4>
+          <p>Développement d'interfaces web avec React & Node.js, intégration MySQL, déploiement en production.</p>
+          <ul style="font-size:13px;color:var(--gris);margin:8px 0 0 16px;line-height:1.8;">
+            <li>React · Node.js · MySQL</li>
+            <li>Optimisation & déploiement</li>
+            <li>Documentation technique</li>
+          </ul>
+        </div>
+        <div class="projet-card-footer"><span class="mini-tag">React</span><span class="mini-tag">Node.js</span><span class="mini-tag">Saint-Gratien · 2026</span></div>
+      </div>
     </div>
 
     <!-- ── Projets en cours ── -->
